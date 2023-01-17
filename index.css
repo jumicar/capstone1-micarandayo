@@ -1,0 +1,298 @@
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	font-family: "Raleway", sans-serif;
+}
+
+.layout {
+	background-color: #364F6B;
+}
+
+header {
+	background-color: #364F6B;
+/*	backdrop-filter: blur(8px);
+	mix-blend-mode: hard-light;*/
+}
+
+.margin-tops {
+	margin-top: 52px;
+}
+
+.text-title {
+	font-size: 40px;
+}
+
+.color-primary {
+	color: #F5F5F5;
+}
+
+.color-secondary {
+	color: #3FC1C9;
+}
+
+/*Header*/
+
+.nav-menu {
+	position: absolute;
+	top: 70px;
+	left: 0;
+	z-index: 99999;
+	height: 100vh;
+	width: 100%;
+	display: none;
+	align-items: center;
+	justify-content: center;
+	background-color: #364F6B;
+}
+
+.nav-menu.active {
+	display: flex;
+}
+
+.nav-menu ul {
+/*	height: 100%;*/
+	font-size: 5rem;
+	text-align: center;
+	align-items: center;
+}
+
+.logo {
+	color: #364F6B;
+	background-color: #364F6B;
+}
+
+.link-item {
+
+}
+
+.link-item:hover {
+	color: #3FC1C9;
+	text-decoration: none;
+}
+
+.contact-btn {
+	padding: .5em 1.5em;
+	border: 1px solid #F5F5F5;
+	border-radius: 50px;}
+
+	.contact-btn:hover {
+		color: #F5F5F5;
+		text-decoration: none;
+		border: 1px solid #3FC1C9;
+		background-color: #3FC1C9;
+	}
+
+	.name-title {
+		top:25%;
+		right: 0;
+	}
+
+
+	.name-title:after {
+
+	}
+
+/*.about-btn-container {
+	height: 100px;
+}
+*/
+	.about-btn {
+		display: flex;
+		align-items: center;
+		gap: 10px;
+		border: 1px solid #F5F5F5;
+		padding: .5em 1.5em;
+		cursor: pointer;
+		bottom: 25%;
+		display: inline-block;
+	}
+
+	.about-btn a:hover {
+		color: #F5F5F5;
+		text-decoration: none;
+	}
+
+	.about-btn:hover  .fa-arrow-right{
+		transform: rotate(90deg);
+	}
+
+	.about-btn:hover {
+		border: 1px solid #3FC1C9;
+		background-color: #3FC1C9;
+	}
+
+	.fa-arrow-right {
+		transition-duration: .3s;
+	}
+
+/*About Section*/
+.flex-gap {
+	gap: 2rem;
+}
+
+.flex-gap-1 {
+	gap: 10px;
+}
+
+.text- {
+	
+	font-weight: 700;
+}
+
+.fa-caret-right {
+	color: #3FC1C9;
+	margin-right: .5rem;
+}
+
+.font-secondary {
+	font-family: 'Ubuntu Mono', monospace;
+}
+
+.dashline {
+	width: 100%;
+	border-top: 1px solid #3FC1C9;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+/*Work Section*/
+.work-image {
+	width: 100%;
+}
+
+/*Contact Section*/
+.fa-envelope, .fa-linkedin-in {
+	color: #364F6B;
+	background-color: #F5F5F5;
+	padding: .2rem .3rem;
+	width: 35px;
+	border-radius: 2px;
+	font-size: 1.8rem;
+}
+
+.send-btn {
+	color: #F5F5F5;
+	border: 1px solid #F5F5F5;
+	background-color: #364F6B;
+	padding: .5rem 2rem;
+	width: 200px;
+}
+
+.send-btn:hover {
+	color: #F5F5F5;
+	text-decoration: none;
+	background-color: #3FC1C9;
+	border: 1px solid #3FC1C9;
+}
+
+/*Footer*/
+
+.footer-text {
+	font-size: .9rem;
+}
+
+.footer-text-wrapper:hover {
+	color: #3FC1C9;
+}
+
+/*Media Queries*/
+
+@media (min-width:992px) {
+	.name-title {
+		position: absolute;
+	}
+
+	.about-btn {
+		position: absolute;
+	}
+
+	.name-title:after {
+		content: '';
+		position: absolute;
+		height: 90px;
+		width: 100%;
+		top: 50%;
+		left: 45%;
+		transform: translateY(-50%);
+		color: #3FC1C9;
+		display: inline-block;
+		z-index: 10;
+		border: 1px solid #3FC1C9;
+	}
+}
+
+
+/*Hamburger Btn*/
+.hamburger-btn {
+    margin-left: .5rem;
+    width: auto;
+    background-color: transparent;
+    border: none;
+    /* display: flex; */
+    /* align-items: center; */
+    /* justify-content: start; */
+}
+
+.hamburger-btn__lines {
+    display: inline-block;
+    width: 23px;
+    height: 2px;
+    border-radius: 4px;
+    background-color: #fff;
+    position: relative;
+    top: -7px;
+    transition: 0.3s;
+}
+
+.hamburger-btn__lines::before {
+    content: '';
+    display: inline-block;
+    width: 23px;
+    height: 2px;
+    border-radius: 4px;
+    background-color: #fff;
+    position: absolute;
+    top:7px;
+    left: 0;
+    width: 100%;
+    transition: 0.3s;
+    transform-origin: calc(30px / 20) center;
+}
+.hamburger-btn__lines::after {
+    content: '';
+    display: inline-block;
+    width: 23px;
+    height: 2px;
+    border-radius: 4px;
+    background-color: #fff;
+    position: absolute;
+    top: -7px;
+    left: 0;
+    width: 100%;
+    transition: 0.3s;
+    transform-origin: calc(30px / 20) center;
+}
+
+.hamburger-btn__open {
+    background: transparent;
+}
+
+.hamburger-btn__open::before {
+    transform: rotate3d(0, 0, 1, 45deg);
+    top:-7px;
+    left: 3px;
+}
+
+.hamburger-btn__open::after {
+    transform: rotate3d(0, 0, 1, -45deg);
+    top: 7px;
+    left: 3px;
+}
