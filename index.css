@@ -207,36 +207,6 @@ header {
 	color: #3FC1C9;
 }
 
-/*Media Queries*/
-
-@media (min-width:992px) {
-	.name-title {
-		position: absolute;
-	}
-
-	.about-btn {
-		position: absolute;
-	}
-
-	.name-title:after {
-		content: '';
-		position: absolute;
-		height: 90px;
-		width: 100%;
-		top: 50%;
-		left: 45%;
-		transform: translateY(-50%);
-		color: #3FC1C9;
-		display: inline-block;
-		z-index: 10;
-		border: 1px solid #3FC1C9;
-	}
-	#about {
-	min-height: 60vh;
-	}
-}
-
-
 /*Hamburger Btn*/
 .hamburger-btn {
     margin-left: .5rem;
@@ -302,4 +272,33 @@ header {
     transform: rotate3d(0, 0, 1, -45deg);
     top: 7px;
     left: 3px;
+}
+
+/*Media Queries*/
+
+@media (min-width:992px) {
+	.name-title {
+		position: absolute;
+	}
+
+	.about-btn {
+		position: absolute;
+	}
+
+	.name-title:after {
+		content: '';
+		position: absolute;
+		height: 90px;
+		width: 100%;
+		top: 50%;
+		left: 45%;
+		transform: translateY(-50%);
+		color: #3FC1C9;
+		display: inline-block;
+		z-index: 10;
+		border: 1px solid #3FC1C9;
+	}
+	#about {
+	min-height: 80vh;
+	}
 }
