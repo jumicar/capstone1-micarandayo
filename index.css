@@ -134,6 +134,10 @@ header {
 	}
 
 /*About Section*/
+#about {
+	min-height: 40vh;
+}
+
 .flex-gap {
 	gap: 2rem;
 }
@@ -226,6 +230,9 @@ header {
 		display: inline-block;
 		z-index: 10;
 		border: 1px solid #3FC1C9;
+	}
+	#about {
+	min-height: 60vh;
 	}
 }
 
